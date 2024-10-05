@@ -11,4 +11,10 @@ class Invoice extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = ['user_id', 'amount', 'status', 'status_changed_at'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }
