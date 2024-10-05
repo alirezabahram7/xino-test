@@ -12,4 +12,9 @@ class Subscription extends Model
 
     protected $fillable = ['name', 'level', 'price'];
 
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
+
 }
