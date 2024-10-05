@@ -18,6 +18,7 @@ return new class extends Migration
         Schema::create('sections', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->integer('level')->comment('1: Basic, 2: Standard, 3: Premium');
             $table->text('description')->nullable();
 
             $table->timestamps();

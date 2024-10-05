@@ -10,8 +10,8 @@ class Section extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['name', 'description'];
-    
+    protected $fillable = ['name', 'description', 'level'];
+
     public function contents()
     {
         return $this->hasMany(Content::class);
