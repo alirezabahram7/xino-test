@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "569e723d-9309-4e9f-b886-b257ae438742",
+		"name": "Xino",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6542879",
+		"_collection_link": "https://behamin.postman.co/workspace/My-Workspace~d7947bfe-cd5c-472f-8d53-f4135c9d5764/collection/6542879-569e723d-9309-4e9f-b886-b257ae438742?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "subscribe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "subscription_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/subscribe",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/invoices",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user sections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/sections",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user sections Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/webhook/users/subscription-renewal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"webhook",
+						"users",
+						"subscription-renewal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
